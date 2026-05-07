@@ -1,0 +1,18 @@
+import numpy as np
+
+# write your code here...
+
+l = []
+
+r, c = list(map(int, input().split()))
+
+for i in range(r):
+    rowdata = list(map(int, input().split()))
+    l.append(rowdata)
+
+arr = np.array(l).reshape(r, c)
+
+print(arr)
+print(arr.ndim)
+print(arr.shape)
+print(arr.size)
